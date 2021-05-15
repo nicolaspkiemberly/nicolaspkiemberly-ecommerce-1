@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Product;
 use App\Category;
 
+
 class ShopController extends Controller
 {
 
@@ -18,7 +19,7 @@ class ShopController extends Controller
     public function index(Request $request,$id = null)
     {
         $categories = Category::all();
-        $products = Product::paginate(6);
+        $products = Product::where('name','like','%'.$request->search.'%')->paginate(9);
         return view('shop.index', compact('products', 'categories', 'id'));
     }
 

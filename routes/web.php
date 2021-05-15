@@ -32,3 +32,5 @@ Route::post('/cart/store', 'CartController@store')->name('store');
 Route::patch('/cart/{id}', 'CartController@update')->name('update');
 
 Route::post('/checkout', 'CheckoutController@store')->name('checkout');
+
+Route::delete('/cart/delete/{id}', 'CartController@delete')->name('delete');

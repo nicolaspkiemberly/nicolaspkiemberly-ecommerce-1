@@ -63,8 +63,9 @@
                     </div>
                     <div class="col-lg-2">
                     <!-- delete cart -->
-                    <form action="" method="POST">
+                    <form action="/cart/delete/{{$cart->id}}" method="POST">
                             @csrf
+                            @method('DELETE')
                             <button type="submit" class="btn btn-danger">Remove</button>
                         </form>
                     </div>

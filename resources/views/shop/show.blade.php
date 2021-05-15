@@ -49,7 +49,7 @@
       <a href="#">ABOUT</a>
       <a href="#">FAQ</a>
     </p>
-    <p>CodingStudio &copy; 2020</p>
+    <p>NicolasKiemberly &copy; 2021</p>
   </div>
 
 </footer>

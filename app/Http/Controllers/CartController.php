@@ -43,5 +43,10 @@ class CartController extends Controller
             'success' => true
         ]);
     }
+    public function delete($id)
+    {
+        Cart::where('id',$id)->delete($id);
+        return redirect('/cart')->with('success', 'Sukses menghapus barang di cart');
+    }
 }
 

@@ -30,13 +30,13 @@
                     <td>Rp{{number_format($cart->qty * $cart->product->price)}}</td>
                 </tr>
                 @php
-                    $total += ($cart->qty * $cart->product->price);
+                    $total += ($cart->product->price * $cart->qty);
                 @endphp
             @endforeach
 
         </tbody>
     </table>
-<h1>Total Pemesanan: Rp {{number_format($cart->qty * $cart->product->price)}}</h1>
+<h1>Total Pemesanan: Rp {{number_format($total)}}</h1>
     </div>
     <script src="{{asset('js/app.js')}}"></script> 
 </body>

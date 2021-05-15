@@ -23,9 +23,9 @@
           </ul>
         </div>
         <h2 id="category-label" class="text-center mt-5">Search Product</h2>
-        <form action="" class="form-inline ml-5">
+        <form action="/shop" method="GET" class="form-inline ml-5">
           <input type="text" class="form-control" name="search">
-          <button class="btn btn-primary">Search</button>
+          <button class="btn btn-primary" value="search">Search</button>
         </form>
       </div>
         <div class="col-lg-8">
